@@ -9,7 +9,7 @@ function iniciarColors() {
         text.style.color = actiu ? "#000000" : "#E9E7DB";
       }
 
-      // Converteix el logo original crema en negre.
+    
       if (logo) {
         logo.style.filter = actiu ? "brightness(0)" : "none";
       }
@@ -59,7 +59,7 @@ if (document.readyState === "loading") {
 
 // MÓBIL
 function activarColorsMobil() {
-  // Xarxes socials
+  // XARXES SOCIALS
   document.querySelectorAll(".social").forEach(function (xarxa) {
     const text = xarxa.querySelector("span");
     const logo = xarxa.querySelector("img");
