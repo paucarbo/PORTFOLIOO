@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolis de fotografia de Pau Carbó. Fotografia esportiva i retrat."
+    />
+    <title>Pau Carbó · Fotografia</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Capçalera i navegació entre apartats -->
+    <header class="header">
+      <nav class="container menu" aria-label="Menú principal">
+        <a href="#inici">inici</a><a href="#treball">treball</a
+        ><a href="#qui-soc">qui soc?</a><a href="#contactem">contactem</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Imatge de portada -->
+      <section class="hero" id="inici" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="imatges/Preferida.jpg"
+          alt="Caball blanc"
+          fetchpriority="high"
+        />
+        <div class="heading-wrapper">
+          <span class="hero-divider" aria-hidden="true"></span>
+          <h1 id="hero-title">PAU CARBÓ</h1>
+        </div>
+      </section>
+      <!-- Galeria: les posicions reprodueixen el muntatge de Figma -->
+      <section class="work container" id="treball" aria-labelledby="work-title">
+        <div class="divider"></div>
+        <div class="gallery-heading"><h2 id="work-title">TREBALL</h2></div>
+        <div class="gallery">
+          <figure class="photo photo-8">
+            <img
+              src="imatges/Jugadors Peralada.jpg"
+              alt="Jugadors Peralada"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-6">
+            <img src="imatges/Mercedez.jpg" alt="Mercedez" loading="lazy" />
+          </figure>
+          <figure class="photo photo-1">
+            <img src="imatges/Cabell.jpg" alt="Cabell" loading="lazy" />
+          </figure>
+          <figure class="photo photo-3">
+            <img src="imatges/Esquena.jpg" alt="Palio Esquena" loading="lazy" />
+          </figure>
+          <figure class="photo photo-12">
+            <img
+              src="imatges/Senyor La Vuelta.JPG"
+              alt="Senyor sentat"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-2">
+            <img src="imatges/Pantaló.jpg" alt="Pantaló" loading="lazy" />
+          </figure>
+          <figure class="photo photo-15">
+            <img
+              src="imatges/Senyor caball.jpg"
+              alt="Senyor i caball de fons"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-11">
+            <img src="imatges/Brunito.jpg" alt="Bruno" loading="lazy" />
+          </figure>
+          <figure class="photo photo-4">
+            <img src="imatges/Teixi Pilota.jpg" alt="Teixi" loading="lazy" />
+          </figure>
+          <figure class="photo photo-7">
+            <img
+              src="imatges/Nen Peralada.jpg"
+              alt="Nen del Peralada"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-13">
+            <img
+              src="imatges/Saxofonista.jpg"
+              alt="Saxofonsita"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-14">
+            <img src="imatges/Quadres.jpg" alt="Quadres" loading="lazy" />
+          </figure>
+          <figure class="photo photo-5">
+            <img src="imatges/Cel Rosa.jpg" alt="Cel ros" loading="lazy" />
+          </figure>
+          <figure class="photo photo-9">
+            <img
+              src="imatges/Decoració Can Genis.jpg"
+              alt="Decoració"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="photo photo-10">
+            <img
+              src="imatges/Passatge del terror.jpg"
+              alt="Passatge del terror"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+      <!-- Presentació amb dues columnes -->
+      <section class="about" id="qui-soc" aria-labelledby="about-title">
+        <div class="container">
+          <div class="divider"></div>
+          <div class="columns">
+            <div class="portrait-wrapper">
+              <img
+                src="/imatges/Pau Carbó.jpeg"
+                alt="Retrat de Pau Carbó"
+                loading="lazy"
+              />
+            </div>
+            <div class="text">
+              <h2 id="about-title">PAU<br />CARBÓ</h2>
+              <p class="subtitle">Fotògraf</p>
+              <p class="description">
+                Fa tres anys que em dedico a la fotografia en un ventall de
+                diferents modalitats, dintre les que destaquen la fotografia
+                esportiva i el retrat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contacte: formulari visual pendent de connectar a un servei -->
+      <section class="contact" id="contactem" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-heading">
+            <h2 id="contact-title">CONTACTEM</h2>
+            <p>ENVIA’M UN GMAIL O UN MISSATGE PER XARXES AMB ELS TEUS DUBTES</p>
+          </div>
+          <form class="contact-form" aria-describedby="form-note">
+            <div class="field">
+              <label for="nom">Nom</label
+              ><input
+                id="nom"
+                name="nom"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="correu">Correu electrònic</label
+              ><input
+                id="correu"
+                name="correu"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="assumpte">Assumpte</label
+              ><input id="assumpte" name="assumpte" type="text" required />
+            </div>
+            <div class="field">
+              <label for="missatge">Missatge</label
+              ><textarea id="missatge" name="missatge" required></textarea>
+            </div>
+            <!-- Canvia type="button" per type="submit" quan configuris l'enviament. -->
+            <button class="btn-text" type="button" aria-describedby="form-note">
+              Enviar correu
+            </button>
+            <span id="form-note" class="sr-only"
+              >Formulari de demostració. L’enviament encara no està
+              configurat.</span
+            >
+          </form>
+          <!-- Falten els enllaços verificats dels perfils: substitueix els span per a href quan els tinguis. -->
+          <div class="socials" aria-label="Xarxes socials">
+            <div class="social">
+              <img src="imatges/Instagram.svg" alt="Instagram" /><span
+                >@paucarbo</span
+              >
+            </div>
+            <div class="social">
+              <img src="imatges/Linkedin.svg" alt="LinkedIn" /><span
+                >Pau Carbó Rigau</span
+              >
+            </div>
+            <div class="social">
+              <img src="imatges/Facebook.svg" alt="Facebook" /><span
+                >@paucarbo</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <nav class="menu" aria-label="Menú del peu de pàgina">
+        <a href="#inici">inici</a><a href="#treball">treball</a
+        ><a href="#qui-soc">qui soc?</a><a href="#contactem">contactem</a>
+      </nav>
+      <div class="divider"></div>
+      <div class="credits">
+        <p>© 2026 · Fotografia i històries</p>
+        <a href="#inici">PAU CARBÓ</a><span>Avís legal · Privacitat</span>
+      </div>
+    </footer>
+  </body>
+</html>
